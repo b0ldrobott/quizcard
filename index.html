@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Card Quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="icon" href="/images/quiz.png">
+    <link href="./styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <img class="main-logo" src="./images/vc.png" alt="Vanilla Coding Logo" />
+    <h1>JavaScript Card Quiz</h1>
+    <section>
+      <div class="startButton"><button>Play</button></div>
+      <div class="rulesBox">
+        <div class="rulesTitle">
+          <span>How to Play</span>
+        </div>
+        <div class="rulesList">
+          <div class="rules">You will have <span>30 seconds</span> to respond to questions.</div>
+          <div class="rules">Your score will be based on the number of correct answers.</div>
+        </div>
+        <div class="buttons">
+          <button class="quit">Quit</button>
+          <button class="continue">Continue</button>
+        </div>
+      </div>
+      <div class="quizBox">
+        <header>
+          <div class="title">JaveScript Card Quiz</div>
+          <div class="timer">
+            <div class="timerText">Time Left</div>
+            <div class="timerSec">15</div>
+          </div>
+        </header>
+        <section>
+          <div class="question">
+            <!--<span>자바스크립트를 만든 사람은 Brendan Eich이다. </span>-->
+          </div>
+          <div class="choiceList">
+            <div class="choice">
+              <span>True</span>
+              <div class="icon check"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="choice">
+              <span>False</span>
+              <div class="icon false"><i class="fas fa-times"></i></div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="totalQuestions">
+            <span><p>1</p>of<p>21</p>Questions</span>
+          </div>
+          <button class="nextButton">Next</button>
+        </footer>
+      </div>
+      <div class="resultBox">
+        <div class="icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="complete">Completed!</div>
+        <div class="score"><span>Your score is <p>21</p>out of<p>21</p></span></div>
+        <div class="buttons">
+          <button class="restart">Play Again</button>
+          <button class="resultQuit">Quit</button>
+        </div>
+      </div>
+    </section>
+    <script src="./app/index.js"></script>
+  </body>
+</html>
