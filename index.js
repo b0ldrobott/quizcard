@@ -34,14 +34,15 @@ quitButton.onclick = ()=> {
 continueButton.onclick = ()=> {
   rulesBox.classList.remove("activeRules");
   quizBox.classList.add("activeQuiz");
-  presentQuestions();
+  presentQuestions(1);
 }
 
 let questionNum = 0;
-let questionCnt = 0;
 
-function presentQuestions() {
+function presentQuestions(index) {
   const questionText = document.querySelector("question");
-  let questionTag = '<span>' + data[questionNum].question + '</span>'; // This part! I'm having an error!
-  console.log(questionTag);
+  const choiceList = document.querySelector("choiceList");
+  let questionTag = data[index].question;
+  let choiceTag = data[index].choices
+  questionText.innerHTML = questionTag; // This...
 }
